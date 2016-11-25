@@ -9,14 +9,14 @@ There can be multiple ```X``` Target values, which are provided via application 
 
 ## Resized image naming
 
-Resized image(s) are stored in a different s3 bucket named as: ```original_bucket-resized```.
+Resized image(s) are stored in a different s3 bucket, name is configured.
 Original image s3 key is not changed, except file name.
 File name is adjusted by appending resized image ```width``` and ```height``` values.
 Here is a sample naming for Target X ```1040```.
-File name is changed by appending value ```_1440_810```:
+File name is changed by appending value ```-1440-810```:
 
 Original image path: ```https://s3-us-west-2.amazonaws.com/images.mycompany.com/boss/20160704/dancing.jpg```
-Resized image path: ```https://s3-us-west-2.amazonaws.com/images.mycompany.com-resized/boss/20160704/dancing_1440_810.jpg```
+Resized image path: ```https://s3-us-west-2.amazonaws.com/images.mycompany.com-resized/boss/20160704/dancing-1440-810.jpg```
 
 ## Usage
 
